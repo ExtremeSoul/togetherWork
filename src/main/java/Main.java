@@ -3,7 +3,7 @@ import java.util.concurrent.ThreadLocalRandom;
 
 
 public class Main {
-    private static final int NUMBER_COUNTER = 10;
+    //private static final int NUMBER_COUNTER = 10;
     public static void main(String[] args) {
 
         piRandom();
@@ -13,10 +13,12 @@ public class Main {
     public static void piRandom(){
         Random random = new Random();
 
-        for (int i = 0; i < NUMBER_COUNTER ; i++) {
+        int numberCounter = random.nextInt(15);
+        System.out.println("ILOSC PI " + numberCounter);
+        for (int i = 0; i < numberCounter ; i++) {
 
             int decimalPlaces = random.nextInt(10);
-            System.out.println(decimalPlaces);
+            System.out.println("ILOSC MIEJSC PO PRZECINKU " + decimalPlaces);
             System.out.print(PiExtension.getPi(decimalPlaces));
 
         }
