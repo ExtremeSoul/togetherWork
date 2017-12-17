@@ -4,6 +4,6 @@ public class EulerExtension {
 
         double euler = Math.E;
 
-        return String.format("x." + x + "f%n", euler);
+        return String.format("%." + x + "f%n", euler);
     }
 }

@@ -17,7 +17,7 @@ public class Main {
 
     private static void piRandom(){
 
-        int counter = counter() * counter();
+        int counter = counter();
 
         System.out.println("ILOSC PI " + counter);
         for (int i = 0; i < counter ; i++) {
@@ -32,9 +32,9 @@ public class Main {
     }
 
     private static void eRandom() {
-        int counter = counter() * counter();
+        int counter = counter();
 
-        System.out.println("ILOSC PI " + counter);
+        System.out.println("ILOSC EULEROW " + counter);
         for (int i = 0; i < counter ; i++) {
 
             int decimalPlaces = counter();
